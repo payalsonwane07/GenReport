@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload Data{% endblock %}
+
+{% block content %}
+  <section>
+    <h2>Upload a CSV or XLSX file</h2>
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv,.xlsx" required>
+      <button type="submit">Upload and Generate Report</button>
+    </form>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flash-messages">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+  </section>
+{% endblock %}

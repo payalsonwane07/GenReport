@@ -1,0 +1,22 @@
+# ReportGen — Generated Report
+# Generated: 2026-07-17T08:04:41.861Z
+# User: mohini
+# Source: sample_sales_data.xlsx
+# Rows: 15
+# Columns: 0
+"Order ID","Date","Customer Name","Product","Category","Quantity","Unit Price","Total Sales","Region"
+"1001","2026-01-05","Rahul Sharma","Laptop","Electronics","2","45000","90000","Nagpur"
+"1002","2026-01-06","Priya Patel","Office Chair","Furniture","5","3500","17500","Pune"
+"1003","2026-01-08","Amit Verma","Mobile Phone","Electronics","3","18000","54000","Mumbai"
+"1004","2026-01-10","Sneha Joshi","Desk","Furniture","2","7500","15000","Nagpur"
+"1005","2026-01-12","Vikram Singh","Headphones","Electronics","10","1200","12000","Delhi"
+"1006","2026-01-14","Anjali Deshmukh","Bookshelf","Furniture","4","4200","16800","Pune"
+"1007","2026-01-16","Rohan Kulkarni","Tablet","Electronics","6","15000","90000","Mumbai"
+"1008","2026-01-18","Neha Gupta","Office Table","Furniture","3","8000","24000","Nagpur"
+"1009","2026-01-20","Karan Mehta","Smartwatch","Electronics","8","5500","44000","Delhi"
+"1010","2026-01-22","Pooja Rao","Sofa","Furniture","1","25000","25000","Pune"
+"1011","2026-01-24","Suresh Nair","Monitor","Electronics","5","9500","47500","Mumbai"
+"1012","2026-01-26","Divya Iyer","Wardrobe","Furniture","2","12000","24000","Nagpur"
+"1013","2026-01-28","Manoj Tiwari","Keyboard","Electronics","12","800","9600","Delhi"
+"1014","2026-01-30","Kavita Menon","Dining Table","Furniture","1","18000","18000","Pune"
+"1015","2026-02-02","Arjun Reddy","Printer","Electronics","4","6500","26000","Mumbai"

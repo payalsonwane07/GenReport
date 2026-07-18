@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix node_backend run dev",
+    "start:backend": "npm --prefix node_backend start"
+  },
+  "dependencies": {
+    "mongodb": "^7.2.0"
+  }
+}

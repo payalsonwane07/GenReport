@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  <section>
+    <h2>Report Generated</h2>
+    {% if report %}
+      <p>Your report is ready.</p>
+      <a class="button" href="{{ url_for('download_report', filename=report) }}">Download Report</a>
+      <p><strong>Report file:</strong> {{ report }}</p>
+    {% else %}
+      <p>No report is available yet.</p>
+      <a class="button" href="{{ url_for('upload') }}">Upload Data</a>
+    {% endif %}
+  </section>
+{% endblock %}
