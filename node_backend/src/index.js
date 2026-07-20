@@ -14,9 +14,15 @@ const chatRoutes = require('./routes/chat');
 const app = express();
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 // Explicit CORS: allow frontend dev origins and any env-configured origins
+const defaultAllowedOrigins = [
+  'http://localhost:3001',
+  'http://localhost:5173',
+  'http://localhost:3000',
+  'https://gen-report-teal.vercel.app',
+];
 const allowedOrigins = process.env.ALLOWED_ORIGINS
-  ? process.env.ALLOWED_ORIGINS.split(',')
-  : ['http://localhost:3001', 'http://localhost:5173', 'http://localhost:3000'];
+  ? process.env.ALLOWED_ORIGINS.split(',').map((origin) => origin.trim()).filter(Boolean)
+  : defaultAllowedOrigins;
 app.use(
   cors({
     origin: (origin, cb) => {
